@@ -3,8 +3,9 @@ import os
 from flask import Flask, jsonify, make_response
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
+from app import db, api
 
-from models import db, Bird
+from .models import  Bird
 
 class Birds(Resource):
 

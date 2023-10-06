@@ -8,7 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 def create_app():
   app = Flask(__name__)
-  db = SQLAlchemy()
+  db = SQLAlchemy(app)
   db.init_app(app)
   api = Api(app)
 

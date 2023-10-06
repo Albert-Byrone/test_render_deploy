@@ -3,7 +3,7 @@ import os
 from flask import Flask, jsonify, make_response
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
-# from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
 print(os.environ.get('DATABASE_URI'))
 

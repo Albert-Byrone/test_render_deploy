@@ -11,7 +11,7 @@ print(os.environ.get('DATABASE_URI'))
 
 def create_app():
   app = Flask(__name__)
-  # db = SQLAlchemy(app)
+  db = SQLAlchemy(app)
   api = Api(app)
 
 
